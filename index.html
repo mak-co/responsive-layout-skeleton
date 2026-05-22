@@ -78,22 +78,42 @@
   <!-- Understanding Flex -->
 
 
-<div>
-  <h1 class=" text-5xl m-8 font-extrabold text-center">Understandin Flex</h1>
-  <div class="navbar flex flex-row items-center ">
-    <div class="items-start  border border-white m-5 p-3 "><h1>Navbar</h1></div>
-    
-    <div class="items-end border  border-white m-5 p-3 "><h1>hello</h1></div>
+<div class="border border-white">
+  <h1 class=" text-5xl  m-8 font-extrabold text-center ">Understandin Flex</h1>
+  
+<div class="flex justify-center m-8">
 
-    <div class="items-end border border-white m-5 p-3 "><h1>hello</h1></div>
-   
+  <div class="inline-flex items-start gap-6 bg-yellow-100 p-6 rounded-2xl">
+    
+    <span class="material-symbols-outlined text-black shrink-0">
+      star
+    </span>
+
+    <p class="text-black font-medium">
+      Flexbox is ideal for single dimension layouts
+      and is commonly used for navigation bars,
+      headers, cards, and interactive UI sections.
+    </p>
+
   </div>
 
+</div>
+
+  <nav class=" flex text-xl  text-white mb-8  bg-slate-900 items-center justify-between px-6 py-2 ">
+    <h1 class=" ">Navbar</h1>
+    <div class="flex gap-6 ">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Services</a>
+      <a href="#">Profile</a>
+    
+    </div>
 
 
- </div>
 
+  </nav>
 
+</div>
 
 
   <!-- Understanding Grid -->
@@ -104,7 +124,7 @@
 </h1>
     </div>
 
-  <div id="flex" class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center ">
+  <div id="flex" class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center ">
 
     
     
@@ -139,35 +159,103 @@
 
  
 
+<div class="border border-white ">
+
+  <h1 class="text-center font-extrabold text-5xl m-8">
+    Understanding Responsiveness
+  </h1>
 
 
 
-
-  <div class="">
-    <h1 class="text-5xl font-extrabold text-center 
-   m-8">Understanding Grid</h1>
-  </div>
-
-  <div class="flex  m-10 gap-4  bg-yellow-100 p-4 rounded-2xl ">
-    <span class="material-symbols-outlined text-black">
-         star
-    </span>
-    <p class=" text-black font-bold ">Flexbox is ideal for single-dimension layouts (either a single row or single column) and is commonly used for components like navigation bars and headers. </p>
-  </div>
-
-<div class=" flex justify-center  border border-black">
-  <table class=" w-28 table-auto mx-auto">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-  </tr>
-
-  <tr>
-    <td>John</td>
-    <td>22</td>
-  </tr>
-</table>
 </div>
+
+
+<section class="bg-black text-white min-h-screen">
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto px-4 py-20">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between mb-20">
+
+      <h1 class="text-2xl font-bold">
+        BrainOS
+      </h1>
+
+      <div class="flex gap-8 text-gray-300">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Docs</a>
+        <a href="#">Login</a>
+      </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left Content -->
+      <div>
+
+        <p class="text-sm text-yellow-400 mb-4">
+          AI Productivity Platform
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Build faster.<br>
+          Think deeper.
+        </h1>
+
+        <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-xl">
+          BrainOS helps creators, developers, and teams
+          organize ideas, automate workflows, and
+          build systems powered by AI.
+        </p>
+
+        <div class="flex gap-4">
+
+          <button class="bg-white text-black px-6 py-3 rounded-xl font-semibold">
+            Start Free
+          </button>
+
+          <button class="border border-gray-700 px-6 py-3 rounded-xl">
+            Watch Demo
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Right Content -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+
+        <div class="space-y-4">
+
+          <div class="bg-black p-4 rounded-xl">
+            AI Workflow Automation
+          </div>
+
+          <div class="bg-black p-4 rounded-xl">
+            Smart Knowledge System
+          </div>
+
+          <div class="bg-black p-4 rounded-xl">
+            Real-Time Collaboration
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+ 
+
+
+
 
   
 
